@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tconvert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="maxresdefault_live" translatesAutoresizingMaskIntoConstraints="NO" id="KzZ-zt-rPi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-1e-vgh">
+                                <rect key="frame" x="58" y="76" width="204.5" height="70"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BM1-yb-AM9">
+                                <rect key="frame" x="19" y="344" width="283" height="31"/>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="am9-pv-muh"/>
+                                </connections>
+                            </slider>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="udV-0J-ecD">
+                                <rect key="frame" x="119" y="265" width="82" height="45.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PU-Bx-EbQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="23.5" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDE-4y-wLb">
+                                        <rect key="frame" x="40.5" y="0.0" width="41.5" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="FX1-wZ-LdS">
+                                <rect key="frame" x="121.5" y="427" width="77" height="45.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8f3-vO-5SL">
+                                        <rect key="frame" x="0.0" y="0.0" width="23.5" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULM-Sr-TY6">
+                                        <rect key="frame" x="40.5" y="0.0" width="36.5" height="45.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BM1-yb-AM9" firstAttribute="top" secondItem="udV-0J-ecD" secondAttribute="bottom" constant="33.5" id="2p7-zU-biZ"/>
+                            <constraint firstItem="FX1-wZ-LdS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3mK-uK-gMe"/>
+                            <constraint firstItem="Vko-1e-vgh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="BYO-DF-Yhz"/>
+                            <constraint firstItem="udV-0J-ecD" firstAttribute="top" secondItem="Vko-1e-vgh" secondAttribute="bottom" constant="119" id="OKg-kE-A6E"/>
+                            <constraint firstItem="FX1-wZ-LdS" firstAttribute="top" secondItem="BM1-yb-AM9" secondAttribute="bottom" constant="53" id="QC5-6M-dGl"/>
+                            <constraint firstItem="KzZ-zt-rPi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Rl9-Wp-VtS"/>
+                            <constraint firstItem="KzZ-zt-rPi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RyV-yv-acf"/>
+                            <constraint firstItem="BM1-yb-AM9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="Vut-TY-rpb"/>
+                            <constraint firstItem="KzZ-zt-rPi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e0X-q2-aYx"/>
+                            <constraint firstItem="udV-0J-ecD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="265" id="giQ-kq-MUo"/>
+                            <constraint firstItem="KzZ-zt-rPi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h8w-QF-cXy"/>
+                            <constraint firstItem="Vko-1e-vgh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ktI-U0-uiY"/>
+                            <constraint firstItem="udV-0J-ecD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="skE-Rm-OOW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BM1-yb-AM9" secondAttribute="trailing" constant="20" id="uda-5n-8Bc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cout" destination="8PU-Bx-EbQ" id="dSC-VX-mfp"/>
+                        <outlet property="fout" destination="8f3-vO-5SL" id="rDi-18-ZJ1"/>
+                        <outlet property="slide" destination="BM1-yb-AM9" id="9QZ-Cr-xJs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="maxresdefault_live" width="1280" height="720"/>
+    </resources>
+</document>
